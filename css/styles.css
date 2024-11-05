@@ -3,110 +3,88 @@
     padding: 0;
 }
 
-body {
-    background-image: url("../img/imagem-fundo.png");
-    background-size: cover;
-    height: 90vh;
-}
-
 main {
     display: flex;
-    height: 100%;
-    margin: 2rem;
+
+    width: 120vh;
+    height: 50rem;
+    
 }
 
 /*branco*/
 .left {
-    background-color: #000000;
-    height: 100%;
     width: 50%;
+    height: 100%;
+    background-color: rgb(128, 128, 128);
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(39, 39, 39);
 }
 
 .icons-h2 {
     display: flex;
-} 
-
-.card {
-    width: 90%;
-    height: 20%;
-    background-color: var(--grey);
-    border-radius: 15px;
+    justify-content: space-between;
 }
 
-.card {
+/*PRODUTOS E INFORMAÇÕES*/
+.bag {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 0.5rem;
+    flex-direction: column;
+    background-color: #faead6;
+    height: 90%;
+    border-radius: 5px;
+    gap: 10px;
 }
 
-.card img {
+.card-1 {
+    height: 10rem;
+    width: 50rem;
+    background-color: #c4c4c4;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.left-img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.produto-tenis {
     margin: 0.5rem;
-    height: 80%;
+    height: 100%;
 }
 
 .container-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
     width: 70%;
-    gap: 1rem;
+    flex-wrap: wrap-reverse;
+    border-left: 1px solid ;
+   
 }
 
-.price {
-    display: flex;
-    flex-direction: row;
+.container-card p{
+   font-weight: 900;
+}
+
+.descricao {
     width: 80%;
-    gap: 1.5rem;
-    margin: 0.5rem;
-}
-
-
-/*Preto*/
-.right {
-    background-color:rgb(255, 255, 255);
-    height: 100%;
-    width: 50%;
-}
-
-.header {
-    display: flex;
-    color: #f4f4f4;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.h2-header {
-    margin-right: 80%;
-    padding: 3%;
-}
-
-.h4-header {
-    margin: 2% 0 0 0 ;
-}
-
-.h2-information {
-    color:#f4f4f4;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10% 50% 0 4% ;
-    border-bottom: 5px solid rgb(255, 255, 255);
-}
-
-.container-cartão {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 45vh;
-    margin: 5% 5% 0 5% ;
-}
-
-.logotipo {
     display: flex;
     flex-direction: column;
+    margin-left: 3rem;
 }
 
-.footer-black {
+.info{
     display: flex;
-    color: #f4f4f4;
 }
 
+.titulo{
+    margin-left: 3rem;
+     width: 80%;
+     margin-bottom: 30px;
+}
